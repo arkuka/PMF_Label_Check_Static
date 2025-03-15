@@ -286,7 +286,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 加载 Excel 文件
   const loadExcelFile = async () => {
     try {
-      const response = await fetch("label_library.xlsx");
+      const response = await fetch("public\label_library.xlsx");
       const arrayBuffer = await response.arrayBuffer();
 
       const workbook = XLSX.read(arrayBuffer, { type: "array" });
